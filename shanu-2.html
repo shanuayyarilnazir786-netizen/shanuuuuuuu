@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>abdu shanavas | Modern Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#00f5ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00f5ff;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:
+    radial-gradient(circle at top left,#00f5ff22,transparent 30%),
+    radial-gradient(circle at bottom right,#7c3aed33,transparent 30%);
+}
+
+.hero-content h1{
+    font-size:70px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content span{
+    color:#00f5ff;
+}
+
+.hero-content p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+.btns{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    margin:10px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.primary{
+    background:#00f5ff;
+    color:black;
+}
+
+.secondary{
+    border:2px solid #00f5ff;
+    color:#00f5ff;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #00f5ff88;
+}
+
+/* SECTION */
+
+section{
+    padding:100px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:60px;
+    color:#00f5ff;
+}
+
+/* ABOUT */
+
+.about-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-box{
+    background:#111827;
+    padding:40px;
+    border-radius:20px;
+    border:1px solid #1e293b;
+}
+
+.about-box p{
+    line-height:2;
+    color:#cbd5e1;
+}
+
+/* SKILLS */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.skill{
+    background:#111827;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    transition:0.4s;
+    border:1px solid #1e293b;
+}
+
+.skill:hover{
+    transform:translateY(-10px);
+    background:#00f5ff;
+    color:black;
+}
+
+/* PROJECTS */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.project{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    transition:0.4s;
+    border:1px solid #1e293b;
+}
+
+.project:hover{
+    transform:scale(1.04);
+    box-shadow:0 0 25px #00f5ff33;
+}
+
+.project h3{
+    margin-bottom:15px;
+    color:#00f5ff;
+}
+
+.project p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0f172a;
+    color:#94a3b8;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .hero-content h1{
+        font-size:50px;
+    }
+
+    .about-container{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">Godwin V Joy</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Creative <span>Developer</span><br>
+            & Tech Enthusiast
+        </h1>
+
+        <p>
+            I create modern websites, creative UI designs,
+            and innovative projects with passion and style.
+        </p>
+
+        <div class="btns">
+            <a href="#projects" class="btn primary">View Work</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2 class="title">About Me</h2>
+
+    <div class="about-container">
+
+        <div class="about-box">
+            <p>
+                Hello! I'm Godwin V Joy, a passionate learner
+                interested in web development, fitness,
+                technology, and creative digital experiences.
+                I enjoy building modern interfaces and learning
+                new technologies every day.
+            </p>
+        </div>
+
+        <div class="about-box">
+            <p>
+                My goal is to create beautiful, fast,
+                and user-friendly websites while improving
+                my skills in programming and design.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <h2 class="title">Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">Arduino</div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <h2 class="title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>
+                Modern responsive portfolio website with
+                animations and interactive UI.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Arduino Smart Project</h3>
+            <p>
+                Electronics project using sensors and Arduino
+                for automation.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Fitness App UI</h3>
+            <p>
+                Stylish fitness tracking interface design
+                focused on clean modern visuals.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+    <h2 class="title">Contact</h2>
+
+    <p>Email: shanuayyarilnazir786@gmail.com</p>
+
+    <a href="#" class="btn primary">GitHub Profile</a>
+
+</section>
+
+<footer>
+
+    © 2026 abdu shanavas | All Rights Reserved
+
+</footer>
+
+</body>
+</html>
